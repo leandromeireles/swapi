@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "aac6eae9-cbc7-4e14-8f30-7ef27f47acf5",
+		"name": "SWAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consultar Todos Planetas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8095/swapi/api/planeta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"swapi",
+						"api",
+						"planeta"
+					]
+				},
+				"description": "Consulta Todos os Pedidos"
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Planeta por Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8095/swapi/api/planeta/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"swapi",
+						"api",
+						"planeta",
+						"1"
+					]
+				},
+				"description": "Consulta Todos os Pedidos"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Planeta Naboo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Naboo\",\r\n    \"clima\": \"temperado\",\r\n    \"terreno\": \"Colinas verdejantes\",\r\n    \"filmes\": [\r\n        {\r\n            \"nome\": \"Star Wars: Episódio I – A Ameaça Fantasma\",\r\n            \"naves\": [\r\n                {\r\n                    \"nome\": \"nave espacial real\",\r\n                    \"detalheNave\": {\r\n                        \"cor\": \"prata\",\r\n                        \"tamanho\": 400,\r\n                        \"velocidade\": \"luz\"\r\n                    }\r\n                },\r\n                {\r\n                    \"nome\": \"nave yoda\",\r\n                    \"detalheNave\": {\r\n                        \"cor\": \"azul\",\r\n                        \"tamanho\": 200,\r\n                        \"velocidade\": \"luz\"\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"nome\": \"O Retorno de JEDI\",\r\n            \"naves\": [\r\n                {\r\n                    \"nome\": \"nave darth\",\r\n                    \"detalheNave\": {\r\n                        \"cor\": \"prata\",\r\n                        \"tamanho\": 400,\r\n                        \"velocidade\": \"luz\"\r\n                    }\r\n                },\r\n                {\r\n                    \"nome\": \"nave Hansolo\",\r\n                    \"detalheNave\": {\r\n                        \"cor\": \"prata\",\r\n                        \"tamanho\": 200,\r\n                        \"velocidade\": \"luz\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8095/swapi/api/planeta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"swapi",
+						"api",
+						"planeta"
+					]
+				},
+				"description": "Consulta Todos os Pedidos"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Planeta Carida",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Carida\",\r\n    \"clima\": \"Quente\",\r\n    \"terreno\": \"Deserto\",\r\n    \"filmes\": [\r\n        {\r\n            \"nome\": \"Ataque dos Clones\",\r\n            \"naves\": [\r\n                {\r\n                    \"nome\": \"nave chubi\",\r\n                    \"detalheNave\": {\r\n                        \"cor\": \"branca\",\r\n                        \"tamanho\": 400,\r\n                        \"velocidade\": \"luz\"\r\n                    }\r\n                },\r\n                {\r\n                    \"nome\": \"nave jedi\",\r\n                    \"detalheNave\": {\r\n                        \"cor\": \"amarela\",\r\n                        \"tamanho\": 700,\r\n                        \"velocidade\": \"luz\"\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"nome\": \"A vingança do Sith\",\r\n            \"naves\": [\r\n                {\r\n                    \"nome\": \"nave leia\",\r\n                    \"detalheNave\": {\r\n                        \"cor\": \"prata\",\r\n                        \"tamanho\": 100,\r\n                        \"velocidade\": \"10000 KM\"\r\n                    }\r\n                },\r\n                {\r\n                    \"nome\": \"nave groco\",\r\n                    \"detalheNave\": {\r\n                        \"cor\": \"prata\",\r\n                        \"tamanho\": 50,\r\n                        \"velocidade\": \"20000 KM\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8095/swapi/api/planeta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"swapi",
+						"api",
+						"planeta"
+					]
+				},
+				"description": "Consulta Todos os Pedidos"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Pedido",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8095/swapi/api/planeta/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"swapi",
+						"api",
+						"planeta",
+						"1"
+					]
+				},
+				"description": "Consulta Todos os Pedidos"
+			},
+			"response": []
+		}
+	]
+}
